@@ -1,12 +1,21 @@
+
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
+  <title>Ihab Ali's Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+
+
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +23,100 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <nav class="fixed-nav-bar">
+      <a href="#intro">intro</a>
+      <a href="#skills">skills</a>
+      <a href="#work">work</a>
+      <a href="#contact">contact</a>
+    </nav>
+
+    <header>
+      <div>
+        <img class="header-img" src="img/ihab.jpg" alt="Image of Ihab Ali">
+      </div>
+
+      <div class="header-text">
+        <h1>Ihab Ali</h1>
+        <h1>Full Stack Web Developer</h1>
+        <p class="header-p">Current Lambda School Student</p>
+      </div>
+
+    </header><!-- end header -->
+
+
+    <section class="main">
+      <div class="intro" id="intro">
+        <h1>Intro</h1><br><br>
+        <p>I am a Full Stack Web Developer living in Dallas, TX.<br /><br />
+          Self-motivated, proactive and highly analytical thinking, offers a vast knowledge of IT, Web Development, QA Software Testing and Information Security. <br />
+          Earned Bachelor of Science in Management Information Systems and pursuing Master of Science in I.T. Management, and also study Full Stack Web Development at Lambda School.</p>
+      </div><!-- end intro -->
+
+      <div class="skills" id="skills">
+        <h1>Skills</h1><br><br>
+        <i class="fab fa-html5"></i>
+        <progress max="100" value="90"></progress><br>
+        <i class="fab fa-css3"></i>
+        <progress max="100" value="80"></progress><br>
+        <i class="fab fa-js-square"></i>
+        <progress max="100" value="50"></progress><br>
+        <i class="fab fa-less"></i>
+        <progress max="100" value="20"></progress><br>
+      </div><!-- end skills -->
+
+    </section><!-- end main -->
+
+
+    <section class="work" id="work">
+      <h1>Work History</h1><br><br>
+      <table style="width:100%">
+        <tr>
+          <th><strong>Company</strong></th>
+          <th><strong>Title</strong></th>
+          <th><strong>Tech Used</strong></th>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>Software Engineer</td>
+          <td>HTML5, CSS3, JS, Git</td>
+        </tr>
+        <tr>
+          <td>Microsoft</td>
+          <td>Software Engineer</td>
+          <td>HTML5, CSS3, JS, Git</td>
+        </tr>
+      </table>
+      <br>
+      <div class="portfolio-link">
+        Click <a href="#"> here</a> to go to my Portfolio
+      </div>
+    </section><!-- end work -->
+
+
+    <section class="contact" id="contact">
+      <h1>Contact Me</h1><br><br>
+      <form name="contact" method="POST" data-netlify="true">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <br><br>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+    </section><!-- end contact -->
+    <footer>
+      <p></p>
+    </footer><!-- end footer -->
+
+
+
+  </div><!-- end container -->
 </body>
+
 </html>
