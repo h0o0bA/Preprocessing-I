@@ -49,7 +49,7 @@
     <section class="main">
       <div class="summary" id="summary">
         <h1>Summary</h1><br><br>
-        <p>Hi! I am Ihab, an enthusiastic and passionate I am a Full Stack Web Developer who enjoys developing innovative solutions to online problems, and to design and implement beautiful, accessible, websites with more focus on the frontend because I really appreciate a good design with great performance and I am seeing it's importance more than ever in today's apps, websites, and products.
+        <p>Hi! I am Ihab, an enthusiastic and passionate Full Stack Web Developer who enjoys developing innovative solutions to online problems, and to design and implement beautiful, accessible, websites with more focus on the frontend because I really appreciate a good design with great performance and I am seeing it's importance more than ever in today's apps, websites, and products.
           <br /><br />
                     I am also self-motivated, proactive and highly analytical thinking, offers a vast knowledge of I.T., Web Development, QA Software Testing and Information Security. <br />
                     Earned Bachelor of Science in Management Information Systems and pursuing Master of Science in I.T. Management, and also currently studying Full Stack Web Development at Lambda School.
@@ -100,13 +100,18 @@
 
     <section class="contact" id="contact">
       <h1>Contact Me</h1><br><br>
-      <form name="contact" method="POST" data-netlify="true">
 
-        <label for="fname">First Name</label>
+      <form name="contact" action="https://formspree.io/hello@ihabali.com" method="POST" data-netlify="true">
+        <!-- <input type="text" name="name">
+        <input type="email" name="_replyto">
+        <input type="submit" value="Send"> -->
+
+      <!-- <form name="contact" method="POST" data-netlify="true"> -->
+        <label for="name">Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Your E-mail..">
         <br><br>
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
